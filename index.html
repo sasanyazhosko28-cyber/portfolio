@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maxim Tishin — PM & AI Adventurer</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; base-uri 'self';">
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== Particles Canvas ===== -->
+  <canvas id="particlesCanvas"></canvas>
+
+  <!-- ===== Cursor Glow ===== -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ===== Header ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">MAXIM<span class="logo__dot">.</span></a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#hero" class="nav__link">About</a></li>
+          <li><a href="#experience" class="nav__link">Experience</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header__controls">
+        <button class="header__control-btn" id="themeToggle" aria-label="Toggle theme">☀️</button>
+        <button class="header__control-btn" id="langToggle" aria-label="Toggle language">RU</button>
+        <button class="burger" id="burger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          Available for projects
+        </div>
+        <p class="hero__label">Hi, I'm</p>
+        <h1 class="hero__title">
+          Maxim<br />
+          <span class="hero__title-accent">Tishin</span>
+        </h1>
+        <div class="hero__roles">
+          <span class="hero__role">Project Manager</span>
+          <span class="hero__role-sep">/</span>
+          <span class="hero__role">AI Adventurer</span>
+          <span class="hero__role-sep">/</span>
+          <span class="hero__role">Powerlifter</span>
+        </div>
+        <p class="hero__desc">
+          I turn ideas into reality. Whether it's leading complex projects,
+          exploring the frontiers of AI, smashing PRs at the gym, or
+          enjoying a well-deserved pint — I bring energy, focus, and
+          a touch of chaos.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">See My Work</a>
+          <a href="#contact" class="btn btn--ghost">Let's Talk →</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__avatar" id="heroAvatar">
+          <span class="hero__avatar-inner">MT</span>
+        </div>
+        <div class="hero__status">
+          <div class="hero__status-item">
+            <span class="hero__status-dot hero__status-dot--green"></span>
+            <span>Beer lover 🍺</span>
+          </div>
+          <div class="hero__status-item">
+            <span class="hero__status-dot hero__status-dot--green"></span>
+            <span>AI enthusiast</span>
+          </div>
+          <div class="hero__status-item">
+            <span class="hero__status-dot hero__status-dot--green"></span>
+            <span>Powerlifting</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About / Bio ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__number">01</span>
+        <h2 class="section__title">About Me</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__content">
+          <p class="about__text">
+            Hey! I'm Maxim — a <strong>Project Manager</strong> with 5+ years of experience 
+            turning complex ideas into shipped products. I thrive on structure, clarity, 
+            and getting things done.
+          </p>
+          <p class="about__text">
+            Recently I dove headfirst into <strong>AI</strong> — and honestly, it clicked. 
+            What drives me is the <strong>freedom</strong>: the ability to build anything 
+            I can imagine. I'm committed to reaching real heights in this space.
+          </p>
+          <p class="about__text">
+            Outside work, I'm a <strong>powerlifter</strong>. Heavy weights, discipline, 
+            consistency — the same principles I bring to every project. 
+            And after a solid session? A well-earned pint from the local taproom 🍺
+          </p>
+        </div>
+        <div class="about__stats">
+          <div class="about__stat">
+            <span class="about__stat-number" data-count="5">0</span>
+            <span class="about__stat-label">Years of PM</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-number" data-count="20">0</span>
+            <span class="about__stat-label">Projects Shipped</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-number" data-count="180">0</span>
+            <span class="about__stat-label">Bench Press (kg)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Interests ===== -->
+  <section class="section interests" id="interests">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__number">02</span>
+        <h2 class="section__title">What Drives Me</h2>
+      </div>
+      <div class="interests__grid">
+        <div class="interest-card">
+          <div class="interest-card__icon">🤖</div>
+          <h3 class="interest-card__title">AI & Technology</h3>
+          <p class="interest-card__desc">
+            Exploring LLMs, agents, and the bleeding edge. I believe AI is the 
+            ultimate tool for turning ideas into reality.
+          </p>
+        </div>
+        <div class="interest-card">
+          <div class="interest-card__icon">🏋️</div>
+          <h3 class="interest-card__title">Powerlifting</h3>
+          <p class="interest-card__desc">
+            Iron discipline. Every rep builds character. The gym is where I 
+            reset, refocus, and push past my limits.
+          </p>
+        </div>
+        <div class="interest-card">
+          <div class="interest-card__icon">🍺</div>
+          <h3 class="interest-card__title">Craft Beer</h3>
+          <p class="interest-card__desc">
+            A good pint after a hard day's work. Nothing fancy — just honest 
+            beer from the local taproom with good company.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experience Timeline ===== -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__number">03</span>
+        <h2 class="section__title">Experience</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">2024 — Present</span>
+            <h3 class="timeline__title">Senior Project Manager</h3>
+            <p class="timeline__desc">
+              Leading cross-functional teams, driving AI initiatives, 
+              and shipping products that matter.
+            </p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">2021 — 2024</span>
+            <h3 class="timeline__title">Project Manager</h3>
+            <p class="timeline__desc">
+              Managed end-to-end delivery of digital products. 
+              Built processes, led teams, kept stakeholders happy.
+            </p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">2019 — 2021</span>
+            <h3 class="timeline__title">Junior PM / Coordinator</h3>
+            <p class="timeline__desc">
+              Started the journey. Learned the ropes of project management 
+              the hard way — and loved every minute.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__number">04</span>
+        <h2 class="section__title">Projects</h2>
+      </div>
+      <p class="section__desc">Things I've built and tinkered with.</p>
+      <div class="projects__filters" id="projectsFilters"></div>
+      <div class="projects__grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__number">05</span>
+        <h2 class="section__title">Skills & Tools</h2>
+      </div>
+      <p class="section__desc">Technologies I work with regularly.</p>
+      <div class="skills__grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== Education & Certifications ===== -->
+  <section class="section education" id="education">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__number">06</span>
+        <h2 class="section__title">Education & Certifications</h2>
+      </div>
+      <div class="education__grid" id="educationGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__number">07</span>
+        <h2 class="section__title">Get In Touch</h2>
+      </div>
+      <p class="section__desc">
+        Got a project, an idea, or just want to grab a beer?<br />
+        My inbox is always open.
+      </p>
+      <a href="mailto:maxim.tishin@gmail.com" class="btn btn--primary contact__btn">Say Hello →</a>
+      <div class="contact__socials">
+        <a href="https://github.com/sasanyazhosko28-cyber" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/maxim-tishin" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Maxim Tishin. Built with <span class="heart">♥</span> and 🍺</p>
+    </div>
+  </footer>
+
+  <!-- ===== Modal Overlay ===== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal__close" id="modalClose" aria-label="Close modal">&times;</button>
+      <div class="modal__body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>

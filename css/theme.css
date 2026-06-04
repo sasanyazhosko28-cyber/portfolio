@@ -1,0 +1,75 @@
+/* ===== Theme Variables ===== */
+:root {
+  --bg-primary: #050505;
+  --bg-secondary: #080c08;
+  --bg-card: rgba(0, 230, 118, 0.02);
+  --text-primary: #c8d6c0;
+  --text-secondary: #7a8f7a;
+  --text-muted: #5a6b5a;
+  --text-dim: #3a4a3a;
+  --border-color: rgba(255, 255, 255, 0.04);
+  --header-bg: rgba(5, 5, 5, 0.85);
+}
+
+[data-theme="light"] {
+  --bg-primary: #f0f5f0;
+  --bg-secondary: #e8efe8;
+  --bg-card: rgba(0, 130, 60, 0.03);
+  --text-primary: #1a2a1a;
+  --text-secondary: #3a5a3a;
+  --text-muted: #5a7a5a;
+  --text-dim: #8aaa8a;
+  --border-color: rgba(0, 0, 0, 0.06);
+  --header-bg: rgba(240, 245, 240, 0.9);
+}
+
+/* Apply theme vars */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.header {
+  background: var(--header-bg);
+}
+
+.about {
+  background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+}
+
+.interests {
+  background: var(--bg-secondary);
+}
+
+.experience {
+  background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+}
+
+.projects {
+  background: var(--bg-primary);
+}
+
+.skills {
+  background: var(--bg-secondary);
+}
+
+.education {
+  background: var(--bg-primary);
+}
+
+.contact {
+  background: var(--bg-primary);
+}
+
+.project-card,
+.skill-card,
+.interest-card,
+.edu-card,
+.about__stat {
+  background: var(--bg-card);
+  border-color: var(--border-color);
+}
+
+.modal {
+  background: var(--bg-secondary);
+}
